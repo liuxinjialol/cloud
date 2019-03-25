@@ -25,7 +25,7 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>镜像列表</h5>
+                        <h5>持久化存储卷列表</h5>
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="input-group">
-                                    <input type="text" placeholder="请输入镜像名称" class="input-sm form-control"> <span class="input-group-btn">
+                                    <input type="text" placeholder="请输入持久化存储卷名称" class="input-sm form-control"> <span class="input-group-btn">
                                         <button type="button" class="btn btn-sm btn-primary">查询</button> </span>
                                 </div>
                             </div>
@@ -59,39 +59,23 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>镜像名称</th>
-                                        <th>镜像标签</th>
-                                        <th>镜像ID</th>
-                                        <th>创建日期</th>
+                                        <th>名称</th>
+                                        <th>卷名称</th>
+                                        <th>状态</th>
                                         <th>容量</th>
+                                        <th>启动时间</th>
+                                        <th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>tomcat</td>
-                                        <td>latest</td>
-                                        <td>f528c7d3dff1</td>
-                                        <td>2 weeks ago</td>
-                                        <td>121MB</a>
-                                        </td>
+                                        <td>mytest</td>
+                                        <td>none</td>
+                                        <td>Active</td>
+                                        <td>3Gi</td>
+                                        <td>10天</td>
+                                        <td><button type="button" class="btn btn-sm btn-primary">详情</button> </span></td>
                                     </tr>
-                                    <tr>
-                                        <td>redis</td>
-                                        <td>latest</td>
-                                        <td>0f55cf3661e9</td>
-                                        <td>6 weeks ago</td>
-                                        <td>95MB</a>
-                                        </td>
-                                    </tr>
-                                   <tr>
-                                        <td>registry.access.redhat.com/rhel7/pod-infrastructure</td>
-                                        <td>latest</td>
-                                        <td>99965fb98423</td>
-                                        <td>17 weeks ago</td>
-                                        <td>99MB</a>
-                                        </td>
-                                    </tr>
-                                    
                                 </tbody>
                             </table>
                         </div>
