@@ -25,7 +25,7 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>pod列表</h5>
+                        <h5>应用列表</h5>
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="input-group">
-                                    <input type="text" placeholder="请输入pod名称" class="input-sm form-control"> <span class="input-group-btn">
+                                    <input type="text" placeholder="请输入应用名称" class="input-sm form-control"> <span class="input-group-btn">
                                         <button type="button" class="btn btn-sm btn-primary">查询</button> </span>
                                 </div>
                             </div>
@@ -59,34 +59,41 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>NAME</th>
-                                        <th>READY</th>
-                                        <th>STATUS</th>
-                                        <th>RESTARTS</th>
-                                        <th>AGE</th>
+                                        <th>应用名称</th>
+                                        <th>CLUSTER-IP</th>
+                                        <th>端口号</th>
+                                        <th>创建日期</th>
+                                        <th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>tomcat-c95gc</td>
-                                        <td>1/1</td>
-                                        <td>Running</td>
-                                        <td>0</td>
-                                        <td>28m</td>
+                                        <td>tomcat</td>
+                                        <td>10.254.64.109</td>
+                                        <td>8080:31111/TCP</td>
+                                        <td>23天</td>
+                                        <td>
+                                        	<button type="button" class="btn btn-sm btn-primary">编辑</button>
+                                        	<button type="button" class="btn btn-sm btn-primary">端口</button>
+                                            <button type="button" class="btn btn-sm btn-primary">存储</button>
+                                            <button type="button" class="btn btn-sm btn-primary">伸缩</button>
+                                            <button type="button" class="btn btn-sm btn-primary">监控</button>
+                                            <button type="button" class="btn btn-sm btn-primary">日志</button>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>redis-b87bd</td>
-                                        <td>1/1</td>
-                                        <td>Running</td>
-                                        <td>0</td>
-                                        <td>6days</td>
-                                    </tr>
-                                    <tr>
-                                        <td>registry.access.redhat.com/rhel7/pod-infrastructure-k76zc</td>
-                                        <td>1/1</td>
-                                        <td>Running</td>
-                                        <td>0</td>
-                                        <td>12days</td>
+                                        <td>redis</td>
+                                        <td>10.254.64.158</td>
+                                        <td>6379:33333/TCP</td>
+                                        <td>182天</td>
+                                        <td>
+                                        	<button type="button" class="btn btn-sm btn-primary">编辑</button>
+                                        	<button type="button" class="btn btn-sm btn-primary">端口</button>
+                                            <button type="button" class="btn btn-sm btn-primary">存储</button>
+                                            <button type="button" class="btn btn-sm btn-primary">伸缩</button>
+                                            <button type="button" class="btn btn-sm btn-primary">监控</button>
+                                            <button type="button" class="btn btn-sm btn-primary">日志</button>
+                                        </td>
                                     </tr>
                                     
                                 </tbody>
